@@ -1,6 +1,9 @@
 import mouse
 import time
 import keyboard
+#import interfaceGraphique
+
+
 
 UP = "\x1B[4A"
 CLR = "\x1B[0K"
@@ -46,7 +49,7 @@ def clicker(pos):
 
 		if isClicking:
 			mouse.click(button='left')
-			time.sleep(0.05)
+			time.sleep(0.01)
 			nbClick +=1
 
 		if not canMove:
